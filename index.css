@@ -93,6 +93,7 @@ body {
 }
 
 .product {
+  display: flex;
   background-color: #fff;
   padding: 10px;
   border: 1px solid var(--border-color);
@@ -113,7 +114,12 @@ body {
 
 .product h2 {
   font-size: var(--font-size-base);
-  margin-bottom: 10px;
+  margin: auto;
+  margin-left: 1%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .product p {
@@ -127,6 +133,11 @@ body {
 
 .product.active .description {
   display: block;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  max-width: 70%; 
+  overflow-wrap: break-word;
+  overflow: auto;
 }
 
 .numero {
@@ -178,3 +189,35 @@ body {
     width: 0;
     transition: width 0.3s;
   }
+
+  .img {
+    /* adicione aqui as propriedades CSS que você deseja aplicar à imagem */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .product img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+  }
+
+.botao {
+  background-color: var(--primary-color); /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: var(--font-size-base); /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.botao:hover {
+  background-color: var(--secondary-color); /* Cor de fundo ao passar o mouse */
+}
