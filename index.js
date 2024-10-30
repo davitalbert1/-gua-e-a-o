@@ -32,3 +32,18 @@ products.forEach((product) => {
     }
   });
 });
+    document.getElementById('search-input').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const products = document.querySelectorAll('.product');
+
+        products.forEach(product => {
+            const title = product.querySelector('h2').textContent.toLowerCase();
+            const description = product.querySelector('.description').textContent.toLowerCase();
+
+            if (title.includes(query) || description.includes(query)) {
+                product.parentElement.style.display = ''; // Exibe o produto
+            } else {
+                product.parentElement.style.display = 'none'; // Oculta o produto
+            }
+        });
+    });

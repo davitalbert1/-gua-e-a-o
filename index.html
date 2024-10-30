@@ -7,72 +7,155 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-        <h1>Catálogo</h1>
-        <div class="search-bar">
-            <input type="search" placeholder="Pesquisar...">
+    <h1>Catálogo</h1>
+    <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Pesquisar...">
+    </div>
+    
+    <!-- Tema 1: Tecnologia -->
+    <div class="theme">
+        <h2>Tecnologia</h2>
+        <div class="products">
+            <ul>
+                <li>
+                    <div class="product">
+                        <img class="img" src="celular.png" alt="Produto 1">
+                        <h2>Celular</h2>
+                        <p class="description">O processo de produção de um smartphone envolve várias etapas, desde a extração de matérias-primas até a montagem final. Estima-se que a produção de um smartphone médio consome cerca de 12.000 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://site.veracruz.edu.br/portaldovera/?p=524', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">12000</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="notebook.png" alt="Produto 4">
+                        <h2>Notebook</h2>
+                        <p class="description">A produção de um notebook pode consumir em torno de 1.500 a 2.000 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://site.veracruz.edu.br/portaldovera/?p=524#:~:text=Na%20montagem%20de%20um,gramas%2C%20exige%2016%20mil%20litros.', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">2000</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="tablet.png" alt="Produto 2">
+                        <h2>Tablet</h2>
+                        <p class="description">A produção de um tablet consome cerca de 1.200 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://akatu.org.br/quanta-agua-e-gasta-na-producao-do-seu-smartphone/', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">1200</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="smartwatch.png" alt="Produto 3">
+                        <h2>Smartwatch</h2>
+                        <p class="description">A produção de um smartwatch consome cerca de 1.000 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/smartwatch', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">1000</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="fones.png" alt="Produto 4">
+                        <h2>Fones de ouvido</h2>
+                        <p class="description">A produção de fones de ouvido consome cerca de 500 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/fones', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">500</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        
-        <!-- Tema 1: Tecnologia -->
-        <div class="theme">
-            <h2>Tecnologia</h2>
-            <div class="products">
-                <ul>
-                    <li>
-                        <div class="product">
-                            <img class="img" src="celular.png" alt="Produto 1">
-                            <h2>Celular</h2>
-                            <p class="description">O processo de produção de um smartphone envolve várias etapas, desde a extração de matérias-primas até a montagem final.
-                                <br>
-                                Matérias-primas: Minerais como cobre, ouro, lítio e cobalto são extraídos. A mineração consome muita água, usada para separar metais e lavar os materiais extraídos.
-                                <br>
-                                Produção de chips e componentes eletrônicos: Durante a fabricação de semicondutores e chips, uma grande quantidade de água ultrapura é necessária para limpar as superfícies dos wafers de silício.
-                                <br>
-                                Montagem: Na montagem final, menos água é usada, mas ainda assim pode haver consumo indireto relacionado à produção de carcaças, baterias e outros componentes.
-                                <br>
-                                Consumo de água: A maior parte do uso de água está nas primeiras fases, principalmente na mineração e na produção de semicondutores. Estima-se que a produção de um smartphone médio consome cerca de 12.000 litros de água.</p>
-                                <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://site.veracruz.edu.br/portaldovera/?p=524', '_blank')">Mais informações.</button>
-                            <p id="numero" class="numero">12000</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product">
-                            <img class="img" src="https://via.placeholder.com/300" alt="Produto 2">
-                            <h2>Produto 2</h2>
-                            <p class="description">Loren ipsun dolor sit anet</p>
-                            <p id="numero" class="numero">10</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    </div>
+
+    <!-- Tema 2: Alimentos -->
+    <div class="theme">
+        <h2>Alimentos</h2>
+        <div class="products">
+            <ul>
+                <li>
+                    <div class="product">
+                        <img class="img" src="arroz.png" alt="Produto 1">
+                        <h2>Arroz</h2>
+                        <p class="description">A produção de arroz pode ser intensiva em água , dependendo do método de cultivo.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/arroz', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">1000</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="feijao.png" alt="Produto 2">
+                        <h2>Feijão</h2>
+                        <p class="description">A produção de feijão pode consumir cerca de 1.000 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/feijao', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">1000</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="cafe.png" alt="Produto 3">
+                        <h2>Café</h2>
+                        <p class="description">A produção de café pode consumir cerca de 1.200 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/cafe', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">1200</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="trigo.png" alt="Produto 5">
+                        <h2>Trigo</h2>
+                        <p class="description">A produção de trigo pode consumir cerca de 1.500 litros de água para produzir 1 kg de grãos, dependendo das condições climáticas e do método de cultivo.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/trigo', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">1500</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        
-        <!-- Tema 2: Roupa -->
-        <div class="theme">
-            <h2>Roupa</h2>
-            <div class="products">
-                <ul>
-                    <li>
-                        <div id="product" class="product">
-                            <img class="img" src="jeans.png" alt="Produto 3">
-                            <h2>Calça jeans</h2>
-                            <p class="description">Cultivo do Algodão: O algodão é uma das culturas mais intensivas em água. Para produzir algodão suficiente para uma única calça jeans, podem ser necessários 10.000 a 20.000 litros de água, usados para irrigar os campos durante o cultivo.
-                                <br>
-                                Tingimento e Lavagem: Esta fase é intensiva em água. O processo de tingimento e lavagem de uma única calça jeans pode consumir entre 150 a 300 litros de água.
-                                <br>
-                                No total, a produção de uma única calça jeans pode consumir entre 7.000 a 10.000 litros de água, sendo o cultivo do algodão e as fases de lavagem os maiores responsáveis por esse uso.
-                                <br>
-                                A indústria de moda tem buscado soluções mais sustentáveis, como tecnologias de lavagem a seco e cultivo de algodão com menor irrigação, para reduzir o impacto ambiental do consumo de água.
-                                </p>
-                                <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.wwf.org.br/?27822/Pegada-Hdrica-incentiva-o-uso-responsvel-da-gua', '_blank')">Mais informações.</button>
-                            <p id="numero" class="numero">8500</p>
-                        </div>
-                    </li>
-                    <!-- Adicione mais produtos aqui -->
-                </ul>
-            </div>
+    </div>
+
+    <!-- Tema 3: Roupa -->
+    <div class="theme">
+        <h2>Roupa</h2>
+        <div class="products">
+            <ul>
+                <li>
+                    <div class="product">
+                        <img class="img" src="camisa.png" alt="Produto 1">
+                        <h2>Camiseta</h2>
+                        <p class="description">A produção de uma camiseta pode consumir cerca de 2.700 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/camiseta', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">2700</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="jeans.png" alt="Produto 2">
+                        <h2>Calça</h2>
+                        <p class="description">A produção de uma calça pode consumir cerca de 3.000 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/calca', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">3000</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="vestido.png" alt="Produto 3">
+                        <h2>Vestido de Algodão</h2>
+                        <p class="description">A produção de um vestido de algodão pode consumir entre 4.000 a 5.000 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/vestido', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">4500</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="img" src="tenis.png" alt="Produto 4">
+                        <h2>Tenis</h2>
+<p class="description">A produção de um par de sapatilhas pode consumir cerca de 2.000 litros de água. Isso ocorre devido ao processo de fabricação, que envolve a utilização de materiais como couro, plástico e borracha, além da necessidade de água para a limpeza e tratamento desses materiais.</p>                        <p class="description">A produção de um par de Tenis pode consumir cerca de 2.000 litros de água.</p>
+                        <button class="botao" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.example.com/sapatilha', '_blank')">Mais informações.</button>
+                        <p id="numero" class="numero">2000</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        
-        <!-- Adicione mais temas aqui -->
+    </div>
+
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>
